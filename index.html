@@ -1,27 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Hakim Salamat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حکیم سلامت</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background-color: #fff8dc;
+      color: #333;
+    }
+    .top-banner {
+      background-color: #facc15;
+      text-align: center;
+      padding: 40px 20px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .top-banner h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #333;
+    }
+    .top-banner p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #555;
+    }
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 200px;
+      z-index: 1000;
+    }
+    .nav-menu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #eee;
+    }
+    .nav-menu a:hover {
+      background-color: #facc15;
+    }
+    .about-box {
+      max-width: 700px;
+      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .about-box h2 {
+      color: #d97706;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .about-box p {
+      line-height: 1.8;
+      text-align: justify;
+    }
+    footer {
+      background-color: #facc15;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      color: #333;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>حکیم سلامت</h1>
-        <p>شاگرد مکتب امام صادق</p>
-    </header>
-<section class="about"
+<body>  <div class="top-banner" id="top">
+    <button class="menu-toggle" onclick="toggleMenu()">منو</button>
+    <h1>حکیم سلامت</h1>
+    <p>شاگرد مکتب امام صادق علیه‌السلام</p>
+    <div class="nav-menu" id="navMenu">
+      <a href="#top">صفحه اصلی</a>
+      <a href="#">محصولات</a>
+      <a href="form.html">فرم مشاوره</a>
+      <a href="#">ارتباط با ما</a>
+    </div>
+  </div>  <div class="about-box">
+    <h2>درباره حکیم سلامت</h2>
     <p>
-        حکیم سلامت یک برند تخصصی در زمینه طب سنتی و مزاج‌شناسی است که با هدف ترویج سبک زندگی سالم و طبیعی فعالیت می‌کند. ما با ارائه آموزش‌های تخصصی، محصولات طبیعی و مشاوره‌های تغذیه و طب سنتی، به شما کمک می‌کنیم تا با شناخت مزاج خود، زندگی سالم‌تری را تجربه کنید.
+      حکیم سلامت مجموعه‌ای است برگرفته از آموزه‌های ناب طب سنتی اسلامی، با هدف ارتقاء سلامت جامعه از طریق معرفی مزاج‌ها، آموزش سبک زندگی سالم و ارائه محصولات طبیعی و درمانی. این مجموعه با افتخار خود را شاگرد مکتب اهل‌بیت (علیهم‌السلام) به ویژه امام صادق (ع) می‌داند و تلاش می‌کند طب اسلامی را با زبان ساده و کاربردی به مردم معرفی کند.
     </p>
-</section>
-    </p>
-</section>
-    <section class="product">
-        <h2>ارتباط با ما </h2>
-        <p>09159400637</p>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html
+  </div>  <footer>
+    &copy; 2025 حکیم سلامت | تمام حقوق محفوظ است.
+  </footer>  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script></body>
+</html>
